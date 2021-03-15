@@ -338,8 +338,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('NIT Material') || text.includes('NIT material') || text.includes('Novel Material') || text.includes('novel material') || text.includes('NIC material')  || text.includes('niit material') || text.includes('Marvel material')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which material would you like to preview? \n Module Handbook \n Slides \n Lab Work'
-            utterance.text = 'Which material would you like to preview? \n Module Handbook \n Slides \n Lab Work'
+            p.innerText = 'Which material would you like to preview? \n NIT Handbook \n NIT Slides \n NIT Lab Work'
+            utterance.text = 'Which material would you like to preview? \n NIT Handbook \n NIT Slides \n NIT Lab Work'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -528,8 +528,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('BI Material') || text.includes('BI material') || text.includes('Business Material') || text.includes('business material')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Would you like to see specific Module Material? \n NIT Material \n BI Material'
-            utterance.text = 'Would you like to see specific Module Material? \n NIT Material \n BI Material'
+            p.innerText = 'Which material would you like to preview? \n BI Handbook \n BI Slides \n BI Lab Work'
+            utterance.text = 'Which material would you like to preview? \n BI Handbook \n BI Slides \n BI Lab Work'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -571,7 +571,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('BI Topic 1') || text.includes('BI topic 1') || text.includes('Business Topic one') || text.includes('business topic one')){
+        if(text.includes('BI Topic 1') || text.includes('BI topic 1') || text.includes('Business Topic 1') || text.includes('business topic 1') || text.includes('BI Topic One') || text.includes('BI topic one') ||  text.includes('Business Topic one') || text.includes('business topic one')){
                 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Topic 1";
@@ -593,7 +593,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Presentations/BI_Pres 1.pdf', doc_preview);
         }
 
-        if(text.includes('BI Topic 2') || text.includes('BI topic 2') || text.includes('Business Topic two') || text.includes('business topic two')){
+        if(text.includes('BI Topic 2') || text.includes('BI topic 2') || text.includes('Business Topic 2') || text.includes('business topic 2') || text.includes('BI Topic Two') || text.includes('BI topic two') || text.includes('Business Topic two') || text.includes('business topic two')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Topic 2";
@@ -615,7 +615,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Presentations/BI_Pres 2.pdf', doc_preview);
         }
 
-        if(text.includes('BI Topic 3') || text.includes('BI topic 3') || text.includes('Business Topic three') || text.includes('business topic three')){
+        if(text.includes('BI Topic 3') || text.includes('BI topic 3') || text.includes('Business Topic 3') || text.includes('business topic 3') || text.includes('BI Topic Three') || text.includes('BI topic three') || text.includes('Business Topic three') || text.includes('business topic three')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Topic 3";
@@ -637,7 +637,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Presentations/BI_Pres 3.pdf', doc_preview);
         }
 
-        if(text.includes('BI Lab Work') || text.includes('BI lab work') || text.includes('BI Labwork') || text.includes('BI labwork') || text.includes('Business Labwork') || text.includes('Business labwork')){
+        if(text.includes('BI Lab Work') || text.includes('BI lab work') || text.includes('Business Labwork') || text.includes('business labwork')){
             p = document.createElement('p');
             p.classList.add('reply')
             p.innerText = 'Which lab work would you like to preview? \n Lab work 1 \n Lab work 2 \n Lab work 3'
@@ -649,7 +649,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('BI Lab work 1') || text.includes('BI lab work 1')){
+        if(text.includes('BI Lab work 1') || text.includes('BI lab work 1') || text.includes('Business Lab work 1') || text.includes('business lab work 1')  || text.includes('Business Lab work One') || text.includes('business lab work one') || text.includes('BI Lab work One') || text.includes('BI lab work one')){
 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Lab work 1";
@@ -671,7 +671,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Labwork/BI_Labwork 1.pdf', doc_preview);
         }
 
-        if(text.includes('BI Lab work 2') || text.includes('BI lab work 2')){
+        if(text.includes('BI Lab work 2') || text.includes('BI lab work 2') || text.includes('Business Lab work 2') || text.includes('business lab work 2')  || text.includes('Business Lab work Two') || text.includes('business lab work two') || text.includes('BI Lab work Two') || text.includes('BI lab work two')){
 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Lab work 2";
@@ -693,7 +693,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Labwork/BI_Labwork 2.pdf', doc_preview);
         }
 
-        if(text.includes('BI Lab work 3') || text.includes('BI lab work 3')){
+        if(text.includes('BI Lab work 3') || text.includes('BI lab work 3') || text.includes('Business Lab work 3') || text.includes('business lab work 3')  || text.includes('Business Lab work Three') || text.includes('business lab work three') || text.includes('BI Lab work Three') || text.includes('BI lab work three')){
 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Lab work 3";
