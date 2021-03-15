@@ -1,0 +1,195 @@
+* {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin:0px;
+    height:100%;
+}
+
+/* ================== LEFT SPLIT ================== */
+
+#leftSplit{
+    height: 100vh;
+    width: 30%;
+    position:absolute;
+    float: left;
+    background-color: #121212;
+    border-right: 3px solid black;
+    color: #fff;
+}
+
+#contentLeftArea{
+    margin: 20px;
+    height: 95%;
+    width: 91%;
+}
+
+#title{
+    font-family: Courier;
+}
+#chatArea{
+    margin: 30px 2%;
+    height: 90%;
+    width: 96%;
+    border: 1px solid #121212;
+}
+
+#chatTitleArea{
+    width: 100%;
+}
+
+#chatTitleArea h2{
+    font-family: 'Segoe UI Emoji';
+    font-size: 18px;
+    font-weight: 110;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 20px
+}
+
+#btn_talk{
+    height: 25px;
+    width: 100px;
+    background-color: #03DAC5; /* Green */
+    border: 1px solid black;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    float: right;
+}
+
+#btn_talk:hover{
+    background-color:  #018786;
+    border: 1px solid white;
+    color: white;
+}
+
+#btn_audioAssist{
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    background-color: #03DAC5;
+    border: 1px solid black;
+    border-radius: 25px;
+    float: right;
+}
+
+#btn_audioAssist:hover{
+    background-color:  #018786;
+    border: 1px solid white;
+}
+
+#chatBoxArea{
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 10px 0;
+    height: 95%;
+    overflow-y: auto;
+    width: 100%;
+    border: 1px solid #03DAC5;
+    border-radius: 15px;
+    background-color: #222222;
+}
+
+#chatBoxArea a {
+    color: grey;
+    font-size: 13px;
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+    margin: 0px 5% 5px 5%;
+}
+
+#chatBoxArea p {
+    color: white;
+    text-align: left;
+    width: 90%;
+    background-color: #757575;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px 5% 5px 5%;
+}
+
+#chatBoxArea span {
+    font-size: 10px;
+}
+
+#chatBoxArea p.reply {
+    text-align: left;
+    background-color: #6200EE;
+}
+
+/* #chatBox{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+} */
+
+
+/* ================== RIGHT SPLIT ================= */
+
+#rightSplit{
+    color: #fff;
+    height: 100vh;
+    width: 70%;
+    float: right;
+    background-color: #222222;
+    background-image: url("/Images/background.jpg");
+}
+
+#contentRightArea{
+    height: 94%;
+    width: 96%;
+    margin: 4%;
+}
+
+#contentTitleArea{
+    height: auto;
+    width: 93%;
+    padding: 1%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #6200EE;
+    background:#7f7f7f;
+    background:rgba(0,0,0,0.8);
+    border-radius: 10px;
+}
+
+#contentTitle{
+    text-align: center;
+}
+
+#contentArea{
+    height: auto;
+    max-height: 83%;
+    width: 93%;
+    padding: 3%;
+    padding-top: 50px;
+    border: 2px solid #03DAC5;
+    background:#7f7f7f;
+    background:rgba(0,0,0,0.8);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.table th {
+    font-size: 18px;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+  }
+
+#doc_preview{
+    height: 640px;
+}

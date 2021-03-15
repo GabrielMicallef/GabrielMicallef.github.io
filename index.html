@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <title>UniHub - Chat Assistant</title>
+    </head>
+    <body>
+        <div id="leftSplit">
+            <div id="contentLeftArea">
+                <h1 id="title"><span style="color: #6200EE">U</span>ni<span style="color: #03DAC5">H</span>ub</h1>
+
+                <div id="chatArea">
+                    <div id="chatTitleArea">
+                        <h2>Chat Assistant</h2>
+                        <button id="btn_audioAssist">🔈</button>
+                        <button id="btn_talk">Talk</button>
+                    </div>
+                    <div id="chatBoxArea">
+                        <a id="userDirections">Say "Hello" for assistance.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="rightSplit">
+            <div id="contentRightArea">
+                <div id="contentTitleArea" style="display:none">
+                    <h2 id="contentTitle"></h2>
+                </div>
+                <div id="contentArea" style="display:none">
+                    <div id="all_timetable" style="display:none">
+                        <dl>
+                            <dt>Week 1</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 2</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 3</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                                <dd>- (Friday Midnight) BI Coursework 1 Submission Deadline</dd>
+                            <dt>Week 4</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                                <dd>- (Friday Midnight) NIT Coursework 1 Submission Deadline</dd>
+                            <dt>Week 5</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 6</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 7</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 8</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 9</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                                <dd>- (Friday Midnight) NIT Coursework 2 Submission Deadline</dd>
+                            <dt>Week 10</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                                <dd>- (Friday Midnight) BI Coursework 2 Submission Deadline</dd>
+                        </dl>
+                    </div>
+                        
+                    <div id="NIT_timetable" style="display:none">
+                        <dl>
+                            <dt>Week 1</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                            <dt>Week 2</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                            <dt>Week 3</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                            <dt>Week 4</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Friday Midnight) NIT Coursework 1 Submission Deadline</dd>
+                            <dt>Week 5</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                            <dt>Week 6</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                            <dt>Week 7</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                            <dt>Week 8</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                            <dt>Week 9</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                                <dd>- (Friday Midnight) NIT Coursework 2 Submission Deadline</dd>
+                            <dt>Week 10</dt>
+                                <dd>- (Monday 6-9pm) Novel Interaction Technologies (NIT), Room 1 </dd>
+                        </dl>
+                    </div>
+                    <div id="BI_timetable" style="display:none">
+                        <dl>
+                            <dt>Week 1</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 2</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 3</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                                <dd>- (Friday Midnight) BI Coursework 1 Submission Deadline</dd>
+                            <dt>Week 4</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 5</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 6</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 7</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 8</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 9</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                            <dt>Week 10</dt>
+                                <dd>- (Tuesday 6-9pm) Business Intelligence (BI), Room 2</dd>
+                                <dd>- (Friday Midnight) BI Coursework 2 Submission Deadline</dd>
+                        </dl>
+                    </div>
+                    <div id="all_deadlines" style="display:none">
+                        <dl>
+                            <dt>Week 3</dt>
+                                <dd>- (Friday Midnight) BI Coursework 1 Submission Deadline</dd>
+                            <dt>Week 4</dt>
+                                <dd>- (Friday Midnight) NIT Coursework 1 Submission Deadline</dd>
+                            <dt>Week 9</dt>
+                                <dd>- (Friday Midnight) NIT Coursework 2 Submission Deadline</dd>
+                            <dt>Week 10</dt>
+                                <dd>- (Friday Midnight) BI Coursework 2 Submission Deadline</dd>
+                        </dl>
+                    </div>
+                    <div id="NIT_deadlines" style="display:none">
+                        <dl>
+                            <dt>Week 4</dt>
+                                <dd>- (Friday Midnight) NIT Coursework 1 Submission Deadline</dd>
+                            <dt>Week 9</dt>
+                                <dd>- (Friday Midnight) NIT Coursework 2 Submission Deadline</dd>
+                            <dt>Week 10</dt>
+                        </dl>
+                    </div>
+                    <div id="BI_deadlines" style="display:none">
+                        <dl>
+                            <dt>Week 3</dt>
+                                <dd>- (Friday Midnight) BI Coursework 1 Submission Deadline</dd>
+                            <dt>Week 10</dt>
+                                <dd>- (Friday Midnight) BI Coursework 2 Submission Deadline</dd>
+                        </dl>
+                    </div>
+                    <div id="all_grades" style="display:none">
+                        <table class="table table-bordered table-dark"id="all_gradesTable">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">NIT</th>
+                                <th scope="col">BI</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Coursework 1</th>
+                                <td>79/100</td>
+                                <td>72/100</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Coursework 2</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="NIT_grades" style="display:none"> 
+                        <table class="table table-bordered table-dark" id="NIT_gradesTable">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Coursework 1</th>
+                                <th scope="col">Coursework 2</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Practical</th>
+                                <td>47/60</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Report</th>
+                                <td>29/40</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="BI_grades" style="display:none">
+                        <table class="table table-bordered table-dark" id="BI_gradesTable">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Coursework 1</th>
+                                <th scope="col">Coursework 2</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Practical</th>
+                                <td>38/60</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Report</th>
+                                <td>34/40</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="doc_preview" style="display:none">
+                    
+                    </div>
+                    <div id="cmd_list" style="display:none">
+                        <table class="table table-bordered table-dark">
+                            <tr>
+                                <th scope="col">Timetable/Schedule Commands</th>
+                            </tr>
+                            <tr><td>Course Timetable</td></tr>
+                            <tr><td>Course Schedule</td></tr>
+                            <tr><td>NIT Timetable</td></tr>
+                            <tr><td>NIT Schedule</td></tr>
+                            <tr><td>Novel Timetable</td></tr>
+                            <tr><td>BI Timetable</td></tr>
+                            <tr><td>BI Schedule</td></tr>
+                            <tr><td>Business Timetable</td></tr>
+                            <tr><td>Coursework Deadlines</td></tr>
+                            <tr><td>NIT Deadlines</td></tr>
+                            <tr><td>Novel Deadlines</td></tr>
+                            <tr><td>BI Deadlines</td></tr>
+                            <tr><td>Business Deadlines</td></tr>
+                        </table>
+                        <table class="table table-bordered table-dark">
+                            <tr>
+                                <th scope="col">Course Material Commands</th>
+                            </tr>
+                            <tr><td>Course Material</td></tr>
+                            <tr><td>NIT Material</td></tr>
+                            <tr><td>Novel Material</td></tr>
+                            <tr><td>NIT Handbook</td></tr>
+                            <tr><td>Novel Handbook</td></tr>
+                            <tr><td>NIT Slides</td></tr>
+                            <tr><td>NIT Presentations</td></tr>
+                            <tr><td>Novel Presentations</td></tr>
+                            <tr><td>NIT Lab Work</td></tr>
+                            <tr><td>Novel Labwork</td></tr>
+                            <tr><td>BI Material</td></tr>
+                            <tr><td>Business Material</td></tr>
+                            <tr><td>BI Handbook</td></tr>
+                            <tr><td>Business Handbook</td></tr>
+                            <tr><td>BI Slides</td></tr>
+                            <tr><td>BI Presentations</td></tr>
+                            <tr><td>Business Presentations</td></tr>
+                            <tr><td>BI Labwork</td></tr>
+                            <tr><td>Business Labwork</td></tr>
+                        </table>
+                        <table class="table table-bordered table-dark">
+                            <tr>
+                                <th scope="col">Grades Commands</th>
+                            </tr>
+                            <tr><td>Course Grades</td></tr>
+                            <tr><td>NIT Grades</td></tr>
+                            <tr><td>NIT Marks</td></tr>
+                            <tr><td>BI Grades</td></tr>
+                            <tr><td>BI Marks</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<script src="pdfobject.min.js"></script>
+<script src="script.js"></script>
