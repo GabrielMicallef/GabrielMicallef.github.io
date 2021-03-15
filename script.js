@@ -253,7 +253,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('Coursework Deadlines') || text.includes('coursework deadlines')){
+        if(text.includes('Coursework Deadlines') || text.includes('coursework deadlines') || text.includes('Course work Deadlines') || text.includes('course work deadlines')){
             p = document.createElement('p');
             p.classList.add('reply')
             p.innerText = 'Would you like to see specific Module Deadlines? \n NIT Deadlines \n BI Deadlines'
@@ -282,7 +282,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('NIT Deadline') || text.includes('NIT deadline') || text.includes('Novel Deadline') || text.includes('novel deadline') || text.includes('niit deadline') || text.includes('Marvel deadline')){
+        if(text.includes('NIT Deadline') || text.includes('NIT deadline') || text.includes('Novel Deadline') || text.includes('novel deadline') || text.includes('NIC deadline') || text.includes('niit deadline') || text.includes('Marvel deadline')){
                 
             // DISPLAY NIT Deadlines
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Deadlines";
@@ -335,7 +335,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('NIT Material') || text.includes('NIT material') || text.includes('Novel Material') || text.includes('novel material') || text.includes('niit material') || text.includes('Marvel material')){
+        if(text.includes('NIT Material') || text.includes('NIT material') || text.includes('Novel Material') || text.includes('novel material') || text.includes('NIC material')  || text.includes('niit material') || text.includes('Marvel material')){
             p = document.createElement('p');
             p.classList.add('reply')
             p.innerText = 'Which material would you like to preview? \n Module Handbook \n Slides \n Lab Work'
@@ -347,7 +347,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('NIT Handbook') || text.includes('NIT handbook') || text.includes('Novel Handbook') || text.includes('novel handbook') || text.includes('niit handbook') || text.includes('Marvel handbook')){
+        if(text.includes('NIT Handbook') || text.includes('NIT handbook') || text.includes('Novel Handbook') || text.includes('novel handbook') || text.includes('NIC handbook')  || text.includes('niit handbook') || text.includes('Marvel handbook')){
             
             //DISPLAY HANDBOOK PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Handbook";
@@ -369,7 +369,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT-Handbook.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Slide') || text.includes('NIT slide') || text.includes('NIT Presentation') || text.includes('NIT presentation') || text.includes('Novel Presentation') || text.includes('novel presentation') || text.includes('niit presentation') || text.includes('Marvel presentation')){
+        if(text.includes('NIT Slide') || text.includes('NIT slide') || text.includes('NIT Presentation') || text.includes('NIT presentation') || text.includes('Novel Presentation') || text.includes('novel presentation') || text.includes('NIC presentation')  || text.includes('niit presentation') || text.includes('Marvel presentation')){
             p = document.createElement('p');
             p.classList.add('reply')
             p.innerText = 'Which slides would you like to preview? \n NIT Topic 1 \n NIT Topic 2 \n NIT Topic 3'
@@ -381,7 +381,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('NIT Topic 1') || text.includes('NIT topic 1') || text.includes('NIT Topic One') || text.includes('NIT topic one') || text.includes('Novel Topic 1') || text.includes('novel topic 1') || text.includes('Novel Topic One') || text.includes('novel topic one') || text.includes('niit topic one') || text.includes('Marvel topic one')){
+        if(text.includes('NIT Topic 1') || text.includes('NIT topic 1') || text.includes('NIT Topic One') || text.includes('NIT topic one') || text.includes('Novel Topic 1') || text.includes('novel topic 1') || text.includes('Novel Topic One') || text.includes('novel topic one') || text.includes('NIC topic one')  || text.includes('niit topic one') || text.includes('Marvel topic one')){
                 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Topic 1";
@@ -403,7 +403,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Presentations/NIT_Pres 1.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Topic 2') || text.includes('NIT topic 2') || text.includes('NIT Topic One') || text.includes('NIT topic one') || text.includes('Novel Topic 2') || text.includes('novel topic 2') || text.includes('Novel Topic Two') || text.includes('novel topic two') || text.includes('niit topic two') || text.includes('Marvel topic two')){
+        if(text.includes('NIT Topic 2') || text.includes('NIT topic 2') || text.includes('NIT Topic One') || text.includes('NIT topic one') || text.includes('Novel Topic 2') || text.includes('novel topic 2') || text.includes('Novel Topic Two') || text.includes('novel topic two') || text.includes('NIC topic two')   || text.includes('niit topic two') || text.includes('Marvel topic two')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Topic 2";
@@ -425,7 +425,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Presentations/NIT_Pres 2.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Topic 3') || text.includes('NIT topic 3') || text.includes('NIT Topic One') || text.includes('NIT topic one') || text.includes('Novel Topic 3') || text.includes('novel topic 3') || text.includes('Novel Topic Three') || text.includes('novel topic three') || text.includes('niit topic three') || text.includes('Marvel topic three')){
+        if(text.includes('NIT Topic 3') || text.includes('NIT topic 3') || text.includes('NIT Topic One') || text.includes('NIT topic one') || text.includes('Novel Topic 3') || text.includes('novel topic 3') || text.includes('Novel Topic Three') || text.includes('novel topic three') || text.includes('NIC topic three')   || text.includes('niit topic three') || text.includes('Marvel topic three')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Topic 3";
@@ -447,7 +447,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Presentations/NIT_Pres 3.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Lab Work') || text.includes('NIT lab work') || text.includes('NIT Labwork') || text.includes('NIT labwork') || text.includes('Novel Labwork') || text.includes('novel labwork') || text.includes('niit labwork') || text.includes('Marvel labwork')){
+        if(text.includes('NIT Lab Work') || text.includes('NIT lab work') || text.includes('NIT Labwork') || text.includes('NIT labwork') || text.includes('Novel Labwork') || text.includes('novel labwork') || text.includes('NIC labwork') || text.includes('niit labwork') || text.includes('Marvel labwork')){
             p = document.createElement('p');
             p.classList.add('reply')
             p.innerText = 'Which lab work would you like to preview? \n NIT Lab work 1 \n NIT Lab work 2 \n NIT Lab work 3'
@@ -459,7 +459,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('NIT Lab work 1') || text.includes('NIT lab work 1') || text.includes('Novel Labwork 1') || text.includes('novel labwork 1') || text.includes('niit labwork 1') || text.includes('Marvel labwork 1')){
+        if(text.includes('NIT Lab work 1') || text.includes('NIT lab work 1') || text.includes('Novel Labwork 1') || text.includes('novel labwork 1') || text.includes('NIC labwork 1') || text.includes('niit labwork 1') || text.includes('Marvel labwork 1')){
                 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Lab work 1";
@@ -481,7 +481,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Labwork/NIT_Labwork 1.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Lab work 2') || text.includes('NIT lab work 2') || text.includes('Novel Labwork 2') || text.includes('novel labwork 2') || text.includes('niit labwork 2') || text.includes('Marvel labwork 2')){
+        if(text.includes('NIT Lab work 2') || text.includes('NIT lab work 2') || text.includes('Novel Labwork 2') || text.includes('novel labwork 2') || text.includes('NIC labwork 2') || text.includes('niit labwork 2') || text.includes('Marvel labwork 2')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Lab work 2";
@@ -503,7 +503,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Labwork/NIT_Labwork 2.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Lab work 3') || text.includes('NIT lab work 3') || text.includes('Novel Labwork 3') || text.includes('novel labwork 3') || text.includes('niit labwork 3') || text.includes('Marvel labwork 3')){
+        if(text.includes('NIT Lab work 3') || text.includes('NIT lab work 3') || text.includes('Novel Labwork 3') || text.includes('novel labwork 3') || text.includes('NIC labwork 3') || text.includes('niit labwork 3') || text.includes('Marvel labwork 3')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Lab work 3";
@@ -746,7 +746,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('NIT Grades') || text.includes('NIT grades') || text.includes('NIT Marks') || text.includes('NIT marks') || text.includes('Novel Grades') || text.includes('novel grades') || text.includes('niit grades') || text.includes('Marvel grades')){
+        if(text.includes('NIT Grades') || text.includes('NIT grades') || text.includes('NIT Marks') || text.includes('NIT marks') || text.includes('Novel Grades') || text.includes('novel grades') || text.includes('NIC grades') || text.includes('niit grades') || text.includes('Marvel grades')){
                 
             // DISPLAY NIT GRADES
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Grades";
