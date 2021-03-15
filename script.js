@@ -187,8 +187,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Course Timetable') || text.includes('course timetable') || text.includes('Course Schedule') || text.includes('course schedule')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Would you like to see specific Lecture/Deadline Schedules? \n NIT Timetable \n BI Timetable \n Coursework Deadlines'
-            utterance.text = 'Would you like to see specific Lecture/Deadline Schedules? \n NIT Timetable \n BI Timetable \n Coursework Deadlines'
+            p.innerText = 'Would you like to see specific Lecture/Deadline Schedules? \n Novel Timetable \n Business Timetable \n Coursework Deadlines'
+            utterance.text = 'Would you like to see specific Lecture/Deadline Schedules? \n Novel Timetable \n Business Timetable \n Coursework Deadlines'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -213,7 +213,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
         
-        if(text.includes('NIT Timetable') || text.includes('NIT timetable') || text.includes('NIT Schedule') || text.includes('NIT schedule') || text.includes('Novel Timetable') || text.includes('novel timetable') || text.includes('niit timetable') || text.includes('Marvel timetable')){
+        if(text.includes('Novel Timetable') || text.includes('novel timetable') || text.includes('Marvel timetable')){
                 
             // DISPLAY NIT TIMETABLE
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Schedule";
@@ -233,7 +233,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('BI Timetable') || text.includes('BI timetable') || text.includes('BI Schedule') || text.includes('BI schedule') || text.includes('Business Timetable') || text.includes('business timetable')){
+        if(text.includes('Business Timetable') || text.includes('business timetable')){
             
             // DISPLAY BI TIMETABLE
             contentTitle.innerHTML = "Business Intelligence (BI): Schedule";
@@ -256,8 +256,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Coursework Deadlines') || text.includes('coursework deadlines') || text.includes('Course work Deadlines') || text.includes('course work deadlines')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Would you like to see specific Module Deadlines? \n NIT Deadlines \n BI Deadlines'
-            utterance.text = 'Would you like to see specific Module Deadlines? \n NIT Deadlines \n BI Deadlines'
+            p.innerText = 'Would you like to see specific Module Deadlines? \n Novel Deadlines \n Business Deadlines'
+            utterance.text = 'Would you like to see specific Module Deadlines? \n Novel Deadlines \n Business Deadlines'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -282,7 +282,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('NIT Deadline') || text.includes('NIT deadline') || text.includes('Novel Deadline') || text.includes('novel deadline') || text.includes('NIC deadline') || text.includes('niit deadline') || text.includes('Marvel deadline')){
+        if(text.includes('Novel deadline') || text.includes('novel deadline') || text.includes('Marvel deadline')){
                 
             // DISPLAY NIT Deadlines
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Deadlines";
@@ -302,7 +302,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('BI Deadline') || text.includes('BI deadline') || text.includes('Business Deadline') || text.includes('business deadline')){
+        if(text.includes('Business Deadline') || text.includes('business deadline')){
             
             // DISPLAY BI Deadlines
             contentTitle.innerHTML = "Business Intelligence (BI): Deadlines";
@@ -326,8 +326,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Course Material') || text.includes('course material')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Would you like to see specific Module Material? \n NIT Material \n BI Material'
-            utterance.text = 'Would you like to see specific Module Material? \n NIT Material \n BI Material'
+            p.innerText = 'Would you like to see specific Module Material? \n Novel Material \n Business Material'
+            utterance.text = 'Would you like to see specific Module Material? \n Novel Material \n Business Material'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -335,11 +335,11 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('NIT Material') || text.includes('NIT material') || text.includes('Novel Material') || text.includes('novel material') || text.includes('NIC material')  || text.includes('niit material') || text.includes('Marvel material')){
+        if(text.includes('Novel Material') || text.includes('novel material') || text.includes('Marvel material')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which material would you like to preview? \n NIT Handbook \n NIT Slides \n NIT Lab Work'
-            utterance.text = 'Which material would you like to preview? \n NIT Handbook \n NIT Slides \n NIT Lab Work'
+            p.innerText = 'Which material would you like to preview? \n Novel Handbook \n Novel Slides \n Novel Lab Work'
+            utterance.text = 'Which material would you like to preview? \n Novel Handbook \n Novel Slides \n Novel Lab Work'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -347,7 +347,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('NIT Handbook') || text.includes('NIT handbook') || text.includes('Novel Handbook') || text.includes('novel handbook') || text.includes('NIC handbook')  || text.includes('niit handbook') || text.includes('Marvel handbook')){
+        if(text.includes('Novel Handbook') || text.includes('novel handbook') || text.includes('Marvel handbook')){
             
             //DISPLAY HANDBOOK PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Handbook";
@@ -369,11 +369,11 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT-Handbook.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Slide') || text.includes('NIT slide') || text.includes('NIT Presentation') || text.includes('NIT presentation') || text.includes('Novel Presentation') || text.includes('novel presentation') || text.includes('NIC presentation')  || text.includes('niit presentation') || text.includes('Marvel presentation')){
+        if(text.includes('Novel Presentation') || text.includes('novel presentation') || text.includes('Marvel presentation')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which slides would you like to preview? \n NIT Topic 1 \n NIT Topic 2 \n NIT Topic 3'
-            utterance.text = 'Which slides would you like to preview? \n NIT Topic 1 \n NIT Topic 2 \n NIT Topic 3'
+            p.innerText = 'Which slides would you like to preview? \n Novel Topic 1 \n Novel Topic 2 \n Novel Topic 3'
+            utterance.text = 'Which slides would you like to preview? \n Novel Topic 1 \n Novel Topic 2 \n Novel Topic 3'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -381,7 +381,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('NIT Topic 1') || text.includes('NIT topic 1') || text.includes('NIT Topic One') || text.includes('NIT topic one') || text.includes('Novel Topic 1') || text.includes('novel topic 1') || text.includes('Novel Topic One') || text.includes('novel topic one') || text.includes('NIC topic one')  || text.includes('niit topic one') || text.includes('Marvel topic one')){
+        if(text.includes('Novel Topic 1') || text.includes('novel topic 1') || text.includes('Novel Topic One') || text.includes('novel topic one') || text.includes('Marvel topic one')){
                 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Topic 1";
@@ -403,7 +403,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Presentations/NIT_Pres 1.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Topic 2') || text.includes('NIT topic 2') || text.includes('NIT Topic One') || text.includes('NIT topic one') || text.includes('Novel Topic 2') || text.includes('novel topic 2') || text.includes('Novel Topic Two') || text.includes('novel topic two') || text.includes('NIC topic two')   || text.includes('niit topic two') || text.includes('Marvel topic two')){
+        if(text.includes('Novel Topic 2') || text.includes('novel topic 2') || text.includes('Novel Topic Two') || text.includes('novel topic two') || text.includes('Marvel topic two')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Topic 2";
@@ -425,7 +425,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Presentations/NIT_Pres 2.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Topic 3') || text.includes('NIT topic 3') || text.includes('NIT Topic One') || text.includes('NIT topic one') || text.includes('Novel Topic 3') || text.includes('novel topic 3') || text.includes('Novel Topic Three') || text.includes('novel topic three') || text.includes('NIC topic three')   || text.includes('niit topic three') || text.includes('Marvel topic three')){
+        if(text.includes('Novel Topic 3') || text.includes('novel topic 3') || text.includes('Novel Topic Three') || text.includes('novel topic three') || text.includes('Marvel topic three')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Topic 3";
@@ -447,11 +447,11 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Presentations/NIT_Pres 3.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Lab Work') || text.includes('NIT lab work') || text.includes('NIT Labwork') || text.includes('NIT labwork') || text.includes('Novel Labwork') || text.includes('novel labwork') || text.includes('NIC labwork') || text.includes('niit labwork') || text.includes('Marvel labwork')){
+        if(text.includes('Novel Labwork') || text.includes('novel labwork') || text.includes('Marvel labwork')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which lab work would you like to preview? \n NIT Lab work 1 \n NIT Lab work 2 \n NIT Lab work 3'
-            utterance.text = 'Which lab work would you like to preview? \n NIT Lab work 1 \n NIT Lab work 2 \n NIT Lab work 3'
+            p.innerText = 'Which lab work would you like to preview? \n Novel Lab work 1 \n Novel Lab work 2 \n Novel Lab work 3'
+            utterance.text = 'Which lab work would you like to preview? \n Novel Lab work 1 \n Novel Lab work 2 \n Novel Lab work 3'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -459,7 +459,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('NIT Lab work 1') || text.includes('NIT lab work 1') || text.includes('Novel Labwork 1') || text.includes('novel labwork 1') || text.includes('NIC labwork 1') || text.includes('niit labwork 1') || text.includes('Marvel labwork 1')){
+        if(text.includes('Novel Labwork 1') || text.includes('novel labwork 1') || text.includes('Marvel labwork 1')){
                 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Lab work 1";
@@ -481,7 +481,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Labwork/NIT_Labwork 1.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Lab work 2') || text.includes('NIT lab work 2') || text.includes('Novel Labwork 2') || text.includes('novel labwork 2') || text.includes('NIC labwork 2') || text.includes('niit labwork 2') || text.includes('Marvel labwork 2')){
+        if(text.includes('Novel Labwork 2') || text.includes('novel labwork 2') || text.includes('Marvel labwork 2')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Lab work 2";
@@ -503,7 +503,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Labwork/NIT_Labwork 2.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Lab work 3') || text.includes('NIT lab work 3') || text.includes('Novel Labwork 3') || text.includes('novel labwork 3') || text.includes('NIC labwork 3') || text.includes('niit labwork 3') || text.includes('Marvel labwork 3')){
+        if(text.includes('Novel Labwork 3') || text.includes('novel labwork 3') || text.includes('Marvel labwork 3')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Lab work 3";
@@ -525,11 +525,11 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Labwork/NIT_Labwork 3.pdf', doc_preview);
         }
             
-        if(text.includes('BI Material') || text.includes('BI material') || text.includes('Business Material') || text.includes('business material')){
+        if(text.includes('Business Material') || text.includes('business material')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which material would you like to preview? \n BI Handbook \n BI Slides \n BI Lab Work'
-            utterance.text = 'Which material would you like to preview? \n BI Handbook \n BI Slides \n BI Lab Work'
+            p.innerText = 'Which material would you like to preview? \n Business Handbook \n Business Slides \n Business Lab Work'
+            utterance.text = 'Which material would you like to preview? \n Business Handbook \n Business Slides \n Business Lab Work'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -537,7 +537,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('BI Handbook') || text.includes('BI handbook') || text.includes('Business Handbook') || text.includes('business handbook')){
+        if(text.includes('Business Handbook') || text.includes('business handbook')){
             
             //DISPLAY HANDBOOK PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Handbook";
@@ -559,11 +559,11 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI-Handbook.pdf', doc_preview);
         }
 
-        if(text.includes('BI Slide') || text.includes('BI slide') || text.includes('BI Presentation') || text.includes('BI presentation') || text.includes('Business Presentation') || text.includes('business presentation')){
+        if(text.includes('Business Slide') || text.includes('business slide') || text.includes('Business Presentation') || text.includes('business presentation')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which slides would you like to preview? \n BI Topic 1 \n BI Topic 2 \n BI Topic 3'
-            utterance.text = 'Which slides would you like to preview? \n BI Topic 1 \n BI Topic 2 \n BI Topic 3'
+            p.innerText = 'Which slides would you like to preview? \n Business Topic 1 \n Business Topic 2 \n Business Topic 3'
+            utterance.text = 'Which slides would you like to preview? \n Business Topic 1 \n Business Topic 2 \n Business Topic 3'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -571,7 +571,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('BI Topic 1') || text.includes('BI topic 1') || text.includes('Business Topic 1') || text.includes('business topic 1') || text.includes('BI Topic One') || text.includes('BI topic one') ||  text.includes('Business Topic one') || text.includes('business topic one')){
+        if(text.includes('Business Topic 1') || text.includes('business topic 1') || text.includes('Business Topic one') || text.includes('business topic one')){
                 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Topic 1";
@@ -593,7 +593,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Presentations/BI_Pres 1.pdf', doc_preview);
         }
 
-        if(text.includes('BI Topic 2') || text.includes('BI topic 2') || text.includes('Business Topic 2') || text.includes('business topic 2') || text.includes('BI Topic Two') || text.includes('BI topic two') || text.includes('Business Topic two') || text.includes('business topic two')){
+        if(text.includes('Business Topic 2') || text.includes('business topic 2') || text.includes('Business Topic two') || text.includes('business topic two')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Topic 2";
@@ -615,7 +615,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Presentations/BI_Pres 2.pdf', doc_preview);
         }
 
-        if(text.includes('BI Topic 3') || text.includes('BI topic 3') || text.includes('Business Topic 3') || text.includes('business topic 3') || text.includes('BI Topic Three') || text.includes('BI topic three') || text.includes('Business Topic three') || text.includes('business topic three')){
+        if(text.includes('Business Topic 3') || text.includes('business topic 3') || text.includes('Business Topic three') || text.includes('business topic three')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Topic 3";
@@ -637,7 +637,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Presentations/BI_Pres 3.pdf', doc_preview);
         }
 
-        if(text.includes('BI Lab Work') || text.includes('BI lab work') || text.includes('Business Labwork') || text.includes('business labwork')){
+        if(text.includes('Business Labwork') || text.includes('business labwork')){
             p = document.createElement('p');
             p.classList.add('reply')
             p.innerText = 'Which lab work would you like to preview? \n Lab work 1 \n Lab work 2 \n Lab work 3'
@@ -649,7 +649,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('BI Lab work 1') || text.includes('BI lab work 1') || text.includes('Business Lab work 1') || text.includes('business lab work 1')  || text.includes('Business Lab work One') || text.includes('business lab work one') || text.includes('BI Lab work One') || text.includes('BI lab work one')){
+        if(text.includes('Business Lab work 1') || text.includes('business lab work 1')  || text.includes('Business Lab work One') || text.includes('business lab work one')){
 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Lab work 1";
@@ -671,7 +671,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Labwork/BI_Labwork 1.pdf', doc_preview);
         }
 
-        if(text.includes('BI Lab work 2') || text.includes('BI lab work 2') || text.includes('Business Lab work 2') || text.includes('business lab work 2')  || text.includes('Business Lab work Two') || text.includes('business lab work two') || text.includes('BI Lab work Two') || text.includes('BI lab work two')){
+        if(text.includes('Business Lab work 2') || text.includes('business lab work 2')  || text.includes('Business Lab work Two') || text.includes('business lab work two')){
 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Lab work 2";
@@ -693,7 +693,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Labwork/BI_Labwork 2.pdf', doc_preview);
         }
 
-        if(text.includes('BI Lab work 3') || text.includes('BI lab work 3') || text.includes('Business Lab work 3') || text.includes('business lab work 3')  || text.includes('Business Lab work Three') || text.includes('business lab work three') || text.includes('BI Lab work Three') || text.includes('BI lab work three')){
+        if(text.includes('Business Lab work 3') || text.includes('business lab work 3')  || text.includes('Business Lab work Three') || text.includes('business lab work three')){
 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Lab work 3";
@@ -719,8 +719,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Course Grades') || text.includes('course grades') || text.includes('Course Marks') ||  text.includes('course marks')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which module grades would you like to see? \n NIT Grades \n BI Grades'
-            utterance.text = 'Which module grades would you like to see? \n NIT Grades \n BI Grades'
+            p.innerText = 'Which module grades would you like to see? \n Novel Grades \n Business Grades'
+            utterance.text = 'Which module grades would you like to see? \n Novel Grades \n Business Grades'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -746,7 +746,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('NIT Grades') || text.includes('NIT grades') || text.includes('NIT Marks') || text.includes('NIT marks') || text.includes('Novel Grades') || text.includes('novel grades') || text.includes('NIC grades') || text.includes('niit grades') || text.includes('Marvel grades')){
+        if(text.includes('Novel Grades') || text.includes('novel grades') || text.includes('Marvel grades')){
                 
             // DISPLAY NIT GRADES
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Grades";
@@ -766,7 +766,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('BI Grades') || text.includes('BI grades') || text.includes('BI Marks') || text.includes('BI marks') || text.includes('Business Grades') || text.includes('business grades')){
+        if(text.includes('Business Grades') || text.includes('business grades')){
             
             // DISPLAY BI GRADES
             contentTitle.innerHTML = "Business Intelligence (BI): Grades";
