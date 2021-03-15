@@ -171,7 +171,7 @@ recognition.addEventListener('result', (e) => {
             
             audioEnabled = false;
             btn_audioAssist.innerHTML = "🔈";
-            btn_audioAssist.style.background= 'Grey';
+            btn_audioAssist.style.background= '#03DAC5';
             btn_audioAssist.style.borderColor= 'black';
             
             p = document.createElement('p');
@@ -282,7 +282,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('NIT Deadlines') || text.includes('NIT deadlines') || text.includes('Novel Deadlines') || text.includes('novel deadlines') || text.includes('niit deadlines') || text.includes('Marvel timetable')){
+        if(text.includes('NIT Deadline') || text.includes('NIT deadline') || text.includes('Novel Deadline') || text.includes('novel deadline') || text.includes('niit deadline') || text.includes('Marvel deadline')){
                 
             // DISPLAY NIT Deadlines
             contentTitle.innerHTML = "Novel Interaction Technologies (NIT): Deadlines";
@@ -302,7 +302,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('BI Deadlines') || text.includes('BI deadlines') || text.includes('Business Deadlines') || text.includes('business deadlines')){
+        if(text.includes('BI Deadline') || text.includes('BI deadline') || text.includes('Business Deadline') || text.includes('business deadline')){
             
             // DISPLAY BI Deadlines
             contentTitle.innerHTML = "Business Intelligence (BI): Deadlines";
@@ -369,7 +369,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT-Handbook.pdf', doc_preview);
         }
 
-        if(text.includes('NIT Slides') || text.includes('NIT slides') || text.includes('NIT Presentations') || text.includes('NIT presentations') || text.includes('Novel Presentations') || text.includes('novel presentations') || text.includes('niit presentations') || text.includes('Marvel presentations')){
+        if(text.includes('NIT Slide') || text.includes('NIT slide') || text.includes('NIT Presentation') || text.includes('NIT presentation') || text.includes('Novel Presentation') || text.includes('novel presentation') || text.includes('niit presentation') || text.includes('Marvel presentation')){
             p = document.createElement('p');
             p.classList.add('reply')
             p.innerText = 'Which slides would you like to preview? \n NIT Topic 1 \n NIT Topic 2 \n NIT Topic 3'
@@ -559,7 +559,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI-Handbook.pdf', doc_preview);
         }
 
-        if(text.includes('BI Slides') || text.includes('BI slides') || text.includes('BI Presentations') || text.includes('BI presentations') || text.includes('Business Presentations') || text.includes('business presentations')){
+        if(text.includes('BI Slide') || text.includes('BI slide') || text.includes('BI Presentation') || text.includes('BI presentation') || text.includes('Business Presentation') || text.includes('business presentation')){
             p = document.createElement('p');
             p.classList.add('reply')
             p.innerText = 'Which slides would you like to preview? \n BI Topic 1 \n BI Topic 2 \n BI Topic 3'
@@ -571,7 +571,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('BI Topic 1') || text.includes('BI topic 1')){
+        if(text.includes('BI Topic 1') || text.includes('BI topic 1') || text.includes('Business Topic one') || text.includes('business topic one')){
                 
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Topic 1";
@@ -593,7 +593,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Presentations/BI_Pres 1.pdf', doc_preview);
         }
 
-        if(text.includes('BI Topic 2') || text.includes('BI topic 2')){
+        if(text.includes('BI Topic 2') || text.includes('BI topic 2') || text.includes('Business Topic two') || text.includes('business topic two')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Topic 2";
@@ -615,7 +615,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/BI_Presentations/BI_Pres 2.pdf', doc_preview);
         }
 
-        if(text.includes('BI Topic 3') || text.includes('BI topic 3')){
+        if(text.includes('BI Topic 3') || text.includes('BI topic 3') || text.includes('Business Topic three') || text.includes('business topic three')){
             
             // DISPLAY PREVIEW
             contentTitle.innerHTML = "Business Intelligence (BI): Topic 3";
