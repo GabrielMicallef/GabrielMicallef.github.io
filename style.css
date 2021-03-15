@@ -162,7 +162,7 @@ body {
 
 #contentArea{
     height: auto;
-    max-height: 90%;
+    max-height: 83%;
     width: 93%;
     padding: 3%;
     padding-top: 50px;
@@ -183,5 +183,5 @@ body {
   }
 
 #doc_preview{
-    height: 850px;
+    height: 750px;
 }
