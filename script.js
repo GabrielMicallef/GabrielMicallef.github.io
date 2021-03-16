@@ -135,12 +135,12 @@ recognition.addEventListener('result', (e) => {
 
     if(e.results[0].isFinal){
 
-        if(text.includes() = false){
+        if(text.includes() === false){
             userAssist.style.display = "none";
 
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Sorry, I did not understand. You can say "Voice Command List" to display a list of things you can say.'
+            p.innerText = 'Sorry, I did not understand. \n  You can say "Voice Command List" to display a list of things you can say.'
             utterance.text = 'Sorry, I did not understand. You can say "Voice Command List" to display a list of things you can say.'
             content.appendChild(p);
 
