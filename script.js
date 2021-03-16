@@ -155,8 +155,8 @@ recognition.addEventListener('result', (e) => {
 
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Hello, I am the University Helper-bot. Here are some commands you can use:\n Course Timetable \n Course Material \n Course Grades \n Enable or Disable audio assist \n Voice Command List'
-            utterance.text = 'Hello, I am the University Helper-bot. Here are some commands you can use:\n Course Timetable \n Course Material \n Course Grades \n Enable or Disable audio assist \n Voice Command List'
+            p.innerText = 'Hello, I am the University Helper-bot. Here are some commands you can use:\n - Course Timetable \n - Course Material \n - Course Grades \n - Enable or Disable audio assist \n - Voice Command List'
+            utterance.text = 'Hello, I am the University Helper-bot. Here are some commands you can use: Course Timetable, Course Material, Course Grades, Enable or Disable audio assist or Voice Command List'
             content.appendChild(p);
 
             if(audioEnabled == true)
@@ -175,8 +175,8 @@ recognition.addEventListener('result', (e) => {
 
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Audio assist has been Enabled. You can disable audio assist by saying: \n  Disable audio assist \n Turn off audio'
-            utterance.text = 'Audio assist has been Enabled. You can disable audio assist by saying: \n  Disable audio assist \n Turn off audio'
+            p.innerText = 'Audio assist has been Enabled. You can disable audio assist by saying: \n  - Disable audio assist \n - Turn off audio'
+            utterance.text = 'Audio assist has been Enabled. You can disable audio assist by saying:  Disable audio assist, or Turn off audio'
             synth.speak(utterance);
             content.appendChild(p);
         }
@@ -202,8 +202,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Course Timetable') || text.includes('course timetable') || text.includes('Course Schedule') || text.includes('course schedule')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Would you like to see specific Lecture/Deadline Schedules? \n Novel Timetable \n Business Timetable \n Coursework Deadlines'
-            utterance.text = 'Would you like to see specific Lecture/Deadline Schedules? \n Novel Timetable \n Business Timetable \n Coursework Deadlines'
+            p.innerText = 'Would you like to see specific Lecture/Deadline Schedules? \n - Novel Timetable \n - Business Timetable \n - Coursework Deadlines'
+            utterance.text = 'Would you like to see specific Lecture/Deadline Schedules?, Novel Timetable, Business Timetable or Coursework Deadlines'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -271,8 +271,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Coursework Deadlines') || text.includes('coursework deadlines') || text.includes('Course work Deadlines') || text.includes('course work deadlines')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Would you like to see specific Module Deadlines? \n Novel Deadlines \n Business Deadlines'
-            utterance.text = 'Would you like to see specific Module Deadlines? \n Novel Deadlines \n Business Deadlines'
+            p.innerText = 'Would you like to see specific Module Deadlines? \n - Novel Deadlines \n - Business Deadlines'
+            utterance.text = 'Would you like to see specific Module Deadlines?, Novel Deadlines or Business Deadlines'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -341,8 +341,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Course Material') || text.includes('course material')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Would you like to see specific Module Material? \n Novel Material \n Business Material'
-            utterance.text = 'Would you like to see specific Module Material? \n Novel Material \n Business Material'
+            p.innerText = 'Would you like to see specific Module Material? \n - Novel Material \n - Business Material'
+            utterance.text = 'Would you like to see specific Module Material?, Novel Material or Business Material'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -353,8 +353,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Novel Material') || text.includes('novel material') || text.includes('Marvel material') || text.includes('Nuffield material')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which material would you like to preview? \n Novel Handbook \n Novel Presentations \n Novel Lab Work'
-            utterance.text = 'Which material would you like to preview? \n Novel Handbook \n Novel Presentations \n Novel Lab Work'
+            p.innerText = 'Which material would you like to preview? \n - Novel Handbook \n - Novel Presentations \n - Novel Lab Work'
+            utterance.text = 'Which material would you like to preview?, Novel Handbook, Novel Presentations or Novel Lab Work'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -387,8 +387,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Novel Presentation') || text.includes('novel presentation') || text.includes('Marvel presentation') || text.includes('Nuffield presentation')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which topics would you like to preview? \n Novel Topic 1 \n Novel Topic 2 \n Novel Topic 3'
-            utterance.text = 'Which topics would you like to preview? \n Novel Topic 1 \n Novel Topic 2 \n Novel Topic 3'
+            p.innerText = 'Which topics would you like to preview? \n - Novel Topic 1 \n - Novel Topic 2 \n - Novel Topic 3'
+            utterance.text = 'Which topics would you like to preview?, Novel Topic 1, Novel Topic 2 or Novel Topic 3'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -465,8 +465,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Novel Labwork') || text.includes('novel labwork') || text.includes('Marvel labwork') || text.includes('Nuffield labwork')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which lab work would you like to preview? \n Novel Lab work 1 \n Novel Lab work 2 \n Novel Lab work 3'
-            utterance.text = 'Which lab work would you like to preview? \n Novel Lab work 1 \n Novel Lab work 2 \n Novel Lab work 3'
+            p.innerText = 'Which lab work would you like to preview? \n - Novel Lab work 1 \n - Novel Lab work 2 \n - Novel Lab work 3'
+            utterance.text = 'Which lab work would you like to preview?, Novel Lab work 1, Novel Lab work 2 or Novel Lab work 3'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -543,8 +543,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Business Material') || text.includes('business material')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which material would you like to preview? \n Business Handbook \n Business Presentations \n Business Lab Work'
-            utterance.text = 'Which material would you like to preview? \n Business Handbook \n Business Presentations \n Business Lab Work'
+            p.innerText = 'Which material would you like to preview? \n - Business Handbook \n - Business Presentations \n - Business Lab Work'
+            utterance.text = 'Which material would you like to preview?, Business Handbook, Business Presentations or Business Lab Work'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -577,8 +577,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Business Slide') || text.includes('business slide') || text.includes('Business Presentation') || text.includes('business presentation')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which topics would you like to preview? \n Business Topic 1 \n Business Topic 2 \n Business Topic 3'
-            utterance.text = 'Which topics would you like to preview? \n Business Topic 1 \n Business Topic 2 \n Business Topic 3'
+            p.innerText = 'Which topics would you like to preview? \n - Business Topic 1 \n - Business Topic 2 \n - Business Topic 3'
+            utterance.text = 'Which topics would you like to preview?, Business Topic 1, Business Topic 2 or Business Topic 3'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -655,8 +655,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Business Labwork') || text.includes('business labwork')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which lab work would you like to preview? \n Lab work 1 \n Lab work 2 \n Lab work 3'
-            utterance.text = 'Which lab work would you like to preview? \n Lab work 1 \n Lab work 2 \n Lab work 3'
+            p.innerText = 'Which lab work would you like to preview? \n - Lab work 1 \n - Lab work 2 \n - Lab work 3'
+            utterance.text = 'Which lab work would you like to preview?, Lab work 1, Lab work 2 or Lab work 3'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
@@ -734,8 +734,8 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('Course Grades') || text.includes('course grades') || text.includes('Course Marks') ||  text.includes('course marks')){
             p = document.createElement('p');
             p.classList.add('reply')
-            p.innerText = 'Which module grades would you like to see? \n Novel Grades \n Business Grades'
-            utterance.text = 'Which module grades would you like to see? \n Novel Grades \n Business Grades'
+            p.innerText = 'Which module grades would you like to see? \n - Novel Grades \n - Business Grades'
+            utterance.text = 'Which module grades would you like to see?, Novel Grades or Business Grades'
             if(audioEnabled == true)
             {
                 synth.speak(utterance);
