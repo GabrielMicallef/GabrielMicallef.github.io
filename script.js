@@ -149,7 +149,7 @@ recognition.addEventListener('result', (e) => {
                 synth.speak(utterance);
             }
         }
-        
+
         if(text.includes('Hello') || text.includes('hello')){
             userAssist.style.display = "none";
 
