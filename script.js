@@ -135,7 +135,7 @@ recognition.addEventListener('result', (e) => {
 
     if(e.results[0].isFinal){
 
-        if(text.includes() == false){
+        if(text.includes() = false){
             userAssist.style.display = "none";
 
             p = document.createElement('p');
