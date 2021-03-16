@@ -900,7 +900,7 @@ recognition.addEventListener('result', (e) => {
             }
         }
         p = document.createElement('p');
-        
+        wordDetected = false;
     }
 
     console.log(text);
