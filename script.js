@@ -196,7 +196,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
 
             // DISPLAY TIMETABLE
-            contentTitle.innerHTML = "Course Schedule";
+            contentTitle.innerHTML = "Course Timetable";
             contentTitleArea.style.display = "block";
             contentArea.style.display = "block";
 
