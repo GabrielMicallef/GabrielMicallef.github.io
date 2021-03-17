@@ -136,7 +136,9 @@ recognition.addEventListener('result', (e) => {
     p.innerText = text;
     content.appendChild(p);
 
-    if(e.results[0].isFinal){
+    if(e.results[0].isFinal)
+    {
+        wordDetected = false;
 
         if(text.includes('Hello') || text.includes('hello')){
             userAssist.style.display = "none";
@@ -900,7 +902,6 @@ recognition.addEventListener('result', (e) => {
             }
         }
         p = document.createElement('p');
-        wordDetected = false;
     }
 
     console.log(text);
