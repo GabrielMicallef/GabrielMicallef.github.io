@@ -360,7 +360,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('Novel Material') || text.includes('novel material') || text.includes('Marvel material') || text.includes('Nuffield material') || text.includes('Norville deadline'))
+        if(text.includes('Novel Material') || text.includes('novel material') || text.includes('Marvel material') || text.includes('Nuffield material') || text.includes('Norville material'))
         {
             wordDetected = true;
 
@@ -375,7 +375,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('Novel Handbook') || text.includes('novel handbook') || text.includes('Marvel handbook') || text.includes('Nuffield handbook') || text.includes('Norville deadline'))
+        if(text.includes('Novel Handbook') || text.includes('novel handbook') || text.includes('Marvel handbook') || text.includes('Nuffield handbook') || text.includes('Norville handbook'))
         {
             wordDetected = true;
             
