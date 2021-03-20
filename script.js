@@ -224,7 +224,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
         
-        if(text.includes('Novel Timetable') || text.includes('novel timetable') || text.includes('Marvel timetable') || text.includes('Nuffield timetable'))
+        if(text.includes('Novel Timetable') || text.includes('novel timetable') || text.includes('Marvel timetable') || text.includes('Nuffield timetable') || text.includes('Norville timetable'))
         {
             wordDetected = true;
                 
@@ -300,7 +300,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('Novel deadline') || text.includes('novel deadline') || text.includes('Marvel deadline') || text.includes('Nuffield deadline'))
+        if(text.includes('Novel deadline') || text.includes('novel deadline') || text.includes('Marvel deadline') || text.includes('Nuffield deadline') || text.includes('Norville deadline'))
         {
             wordDetected = true;
                 
@@ -360,7 +360,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('Novel Material') || text.includes('novel material') || text.includes('Marvel material') || text.includes('Nuffield material'))
+        if(text.includes('Novel Material') || text.includes('novel material') || text.includes('Marvel material') || text.includes('Nuffield material') || text.includes('Norville deadline'))
         {
             wordDetected = true;
 
@@ -375,7 +375,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('Novel Handbook') || text.includes('novel handbook') || text.includes('Marvel handbook') || text.includes('Nuffield handbook'))
+        if(text.includes('Novel Handbook') || text.includes('novel handbook') || text.includes('Marvel handbook') || text.includes('Nuffield handbook') || text.includes('Norville deadline'))
         {
             wordDetected = true;
             
@@ -399,7 +399,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT-Handbook.pdf', doc_preview);
         }
 
-        if(text.includes('Novel Presentation') || text.includes('novel presentation') || text.includes('Marvel presentation') || text.includes('Nuffield presentation'))
+        if(text.includes('Novel Presentation') || text.includes('novel presentation') || text.includes('Marvel presentation') || text.includes('Nuffield presentation') || text.includes('Norville presentation'))
         {
             wordDetected = true;
 
@@ -414,7 +414,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('Novel Topic 1') || text.includes('novel topic 1') || text.includes('Novel Topic One') || text.includes('novel topic one') || text.includes('Marvel topic one') || text.includes('Nuffield topic one')){
+        if(text.includes('Novel Topic 1') || text.includes('novel topic 1') || text.includes('Novel Topic One') || text.includes('novel topic one') || text.includes('Marvel topic one') || text.includes('Nuffield topic one') || text.includes('Norville topic one')){
 
             wordDetected = true;   
 
@@ -438,7 +438,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Presentations/NIT_Pres 1.pdf', doc_preview);
         }
 
-        if(text.includes('Novel Topic 2') || text.includes('novel topic 2') || text.includes('Novel Topic Two') || text.includes('novel topic two') || text.includes('Marvel topic two') || text.includes('Nuffield topic two'))
+        if(text.includes('Novel Topic 2') || text.includes('novel topic 2') || text.includes('Novel Topic Two') || text.includes('novel topic two') || text.includes('Marvel topic two') || text.includes('Nuffield topic two') || text.includes('Norville topic two'))
         {
             wordDetected = true;
             
@@ -462,7 +462,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Presentations/NIT_Pres 2.pdf', doc_preview);
         }
 
-        if(text.includes('Novel Topic 3') || text.includes('novel topic 3') || text.includes('Novel Topic Three') || text.includes('novel topic three') || text.includes('Marvel topic three') || text.includes('Nuffield topic three'))
+        if(text.includes('Novel Topic 3') || text.includes('novel topic 3') || text.includes('Novel Topic Three') || text.includes('novel topic three') || text.includes('Marvel topic three') || text.includes('Nuffield topic three') || text.includes('Norville topic three'))
         {
             wordDetected = true;
             
@@ -486,7 +486,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Presentations/NIT_Pres 3.pdf', doc_preview);
         }
 
-        if(text.includes('Novel Labwork') || text.includes('novel labwork') || text.includes('Marvel labwork') || text.includes('Nuffield labwork'))
+        if(text.includes('Novel Labwork') || text.includes('novel labwork') || text.includes('Marvel labwork') || text.includes('Nuffield labwork')|| text.includes('Norville labwork'))
         {
             wordDetected = true;
 
@@ -501,7 +501,7 @@ recognition.addEventListener('result', (e) => {
             content.appendChild(p);
         }
 
-        if(text.includes('Novel Labwork 1') || text.includes('novel labwork 1') || text.includes('Marvel labwork 1') || text.includes('Nuffield labwork 1'))
+        if(text.includes('Novel Labwork 1') || text.includes('novel labwork 1') || text.includes('Marvel labwork 1') || text.includes('Nuffield labwork 1') || text.includes('Norville labwork 1'))
         {
             wordDetected = true;
                 
@@ -525,7 +525,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Labwork/NIT_Labwork 1.pdf', doc_preview);
         }
 
-        if(text.includes('Novel Labwork 2') || text.includes('novel labwork 2') || text.includes('Marvel labwork 2') || text.includes('Nuffield labwork 2'))
+        if(text.includes('Novel Labwork 2') || text.includes('novel labwork 2') || text.includes('Marvel labwork 2') || text.includes('Nuffield labwork 2') || text.includes('Norville labwork 2'))
         {
             wordDetected = true;
             
@@ -549,7 +549,7 @@ recognition.addEventListener('result', (e) => {
             PDFObject.embed('/Documents/NIT_Labwork/NIT_Labwork 2.pdf', doc_preview);
         }
 
-        if(text.includes('Novel Labwork 3') || text.includes('novel labwork 3') || text.includes('Marvel labwork 3') || text.includes('Nuffield labwork 3'))
+        if(text.includes('Novel Labwork 3') || text.includes('novel labwork 3') || text.includes('Marvel labwork 3') || text.includes('Nuffield labwork 3') || text.includes('Norville labwork 3'))
         {
             wordDetected = true;
             
@@ -820,7 +820,7 @@ recognition.addEventListener('result', (e) => {
             cmd_list.style.display = "none";
         }
 
-        if(text.includes('Novel Grades') || text.includes('novel grades') || text.includes('Marvel grades') || text.includes('Nuffield grades'))
+        if(text.includes('Novel Grades') || text.includes('novel grades') || text.includes('Marvel grades') || text.includes('Nuffield grades') || text.includes('Norville grades'))
         {
             wordDetected = true;
                 
